@@ -12,8 +12,12 @@ export const router = [
     view: /*html*/`
     <div class="card">
       <div class="card-body">
-        <p>Home Page</p>
-        <section class="row" id="players"></section>
+      <section class="row text-center">
+      <h2>GameNight</h2>
+    </section>
+    <section class="row" id="players">
+    
+    </section>
       </div>
     </div>
     `
