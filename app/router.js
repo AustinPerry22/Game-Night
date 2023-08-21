@@ -16,8 +16,16 @@ export const router = [
       <h2>GameNight</h2>
     </section>
     <section class="row" id="players">
-    
     </section>
+    <form class="text-center" onsubmit="app.playersController.addPlayer()">
+  <div>
+    <label for="name">Player Name:</label>
+    <input type="text" minlength="2" maxlength="15" name="name" required />
+  </div>
+  <div>
+    <button type="submit">Add Player</button>
+  </div>
+</form>
       </div>
     </div>
     `

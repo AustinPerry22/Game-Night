@@ -17,6 +17,12 @@ export class PlayerController {
         this.draw()
     }
 
+    addPlayer() {
+        let playerName = 'temp'
+        playerService.addPlayer(playerName)
+        this.draw()
+    }
+
     draw() {
         let content = ''
         AppState.players.forEach(player => {

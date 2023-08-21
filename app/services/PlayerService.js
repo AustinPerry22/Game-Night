@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { Player } from "../models/Player.js";
 
 class PlayerService {
 
@@ -9,11 +10,15 @@ class PlayerService {
     }
 
     minusScore(playerName) {
-        let character = AppState.players.find(player => player.name == playerName)
-        if (character.score > 0) {
-            character.score--
+        let player = AppState.players.find(player => player.name == playerName)
+        if (player.score > 0) {
+            player.score--
         }
-        console.log(character)
+        console.log(player)
+    }
+
+    addPlayer(playerName) {
+        AppState.players.push(new Player(`${playerName}`))
     }
 }
 
